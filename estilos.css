@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 20px;
+}
+
+
+
+.card__header__img {
+    width: 150px;
+}
+
+
+.card {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    font-family: 'Dancing Script', cursive;
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 400px;
+    background-color: gold;
+}
+
+
+
+.card__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+.card__header__name, .card__header__cargo {
+    margin: 0;
+    width: max-content;
+}
+
+.card__description {
+    padding: 20px;
+}
+
+.card__description p {
+    text-align: center;
+}
+
+.card__description__social__media a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.card__description__social__media a i {
+    padding: 0px 15px;
+    color: black;
+}
+
+.card__header__img {
+    position: relative;
+    top:15px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:420px) {
+    .card {
+        display: block;
+    }
+
+    .card__header {
+        border-right: none;
+        border-bottom: 1px solid rgba(0,0,0,0.2);;
+    }
+
+}
